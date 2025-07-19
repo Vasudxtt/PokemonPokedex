@@ -1,4 +1,4 @@
-import {first151Pokemon} from"../utils/index"
+import {first151Pokemon, getFullPokedexNumber} from"../utils/index"
 
 
 
@@ -9,6 +9,7 @@ export function SideNav(){
       {first151Pokemon.map((pokemon,pokemonIndex)=>{
         return(
           <button>
+            <p>{getFullPokedexNumber}</p>
             <p>{pokemon}</p>
           </button>
         )
