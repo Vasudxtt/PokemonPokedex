@@ -14,7 +14,14 @@ export function PokeCard(props){
 
     // 1.define the cache
     let cache = {}
+    if (localStorage.getItem('pokedex')){
+      cache = JSON.parse(localStorage.getItem('pokedex'))
+    }
     // 2 check if the slected pokemon is in the cache ,otherwise fetch the pokemon from the api
+    if(selectedPokemon in cache){
+      // read from cache
+      setData(cache[selectedPokemon])
+    }
 
     // 3 if we fetch the api , make sure to save the information to the cache for next time
   },[selectedPokemon])
