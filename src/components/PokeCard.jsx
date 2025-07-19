@@ -33,7 +33,10 @@ export function PokeCard(props){
         const suffix = 'pokemon/' + selectedPokemon
         const finalUrl = baseUrl + suffix
         const res = await fetch(finalUrl)
-
+        const pokemonData = await res.json()
+        setData(pokemonData)
+      cache[selectedPokemon] = pokemonData
+      localStorage.setItem(JSON.stringify(cache))
       } catch(err){
         console.log(err.message);
       }finally{
@@ -42,8 +45,10 @@ export function PokeCard(props){
       
     }
 
+    fetchPokemonData()
+
     // 3 if we fetch the api , make sure to save the information to the cache for next time
-  },[selectedPokemon])
+  },[loading,selectedPokemon])
   return(
     <div></div>
   )
