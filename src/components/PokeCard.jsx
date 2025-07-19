@@ -90,6 +90,18 @@ if(loading || !data){
           )
         })}
       </div>
+      <h3>Stats</h3>
+      <div className="stats-card">
+        {stats.map((statObj,statIndex)=>{
+          const {stat,base_stat} = statObj
+          return(
+            <div key={statIndex}>
+              <p>{stat}</p>
+              <p>{base_stat}</p>
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
