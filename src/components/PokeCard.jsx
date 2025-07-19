@@ -86,7 +86,7 @@ if(loading || !data){
         {imgList.map((spriteUrl,spriteIndex)=>{
           const imgUrl = sprites[spriteUrl]
           return(
-            <img key={spriteIndex} src={""} alt={`${name}-img-${spriteUrl}`} />
+            <img key={spriteIndex} src={imgUrl} alt={`${name}-img-${spriteUrl}`} />
           )
         })}
       </div>
