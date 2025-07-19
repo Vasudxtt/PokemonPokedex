@@ -9,7 +9,7 @@ export function SideNav(){
       {first151Pokemon.map((pokemon,pokemonIndex)=>{
         return(
           <button>
-            <p>{getFullPokedexNumber}</p>
+            <p>{getFullPokedexNumber(pokemonIndex)}</p>
             <p>{pokemon}</p>
           </button>
         )
