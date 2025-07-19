@@ -36,7 +36,7 @@ export function PokeCard(props){
         const pokemonData = await res.json()
         setData(pokemonData)
       cache[selectedPokemon] = pokemonData
-      localStorage.setItem(JSON.stringify(cache))
+      localStorage.setItem('pokedex',JSON.stringify(cache))
       } catch(err){
         console.log(err.message);
       }finally{
