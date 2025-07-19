@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import {getFullPokedexNumber, getPokedexNumber} from "../utils/index"
 import { TypeCard } from "./TypeCard"
 
-export function PokeCard(props){
+export default function PokeCard(props){
   const {selectedPokemon} = props
   // data here will be the actual pokemon information
   const[data,setData] = useState(null)
