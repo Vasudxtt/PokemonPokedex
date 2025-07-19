@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import {getPokedexNumber} from "../utils/index"
 
 export function PokeCard(props){
   const {selectedPokemon} = props
@@ -30,7 +31,7 @@ export function PokeCard(props){
       setLoading(true)
       try{
         const baseUrl = 'https://pokeapi.co/api/v2/'
-        const suffix = 'pokemon/' + selectedPokemon
+        const suffix = 'pokemon/' + getPokedexNumber(selectedPokemon)
         const finalUrl = baseUrl + suffix
         const res = await fetch(finalUrl)
         const pokemonData = await res.json()
