@@ -102,6 +102,8 @@ if(loading || !data){
           )
         })}
       </div>
+      <h3>Moves</h3>
+      <div className="pokemin-move-grid"></div>
     </div>
   )
 }
