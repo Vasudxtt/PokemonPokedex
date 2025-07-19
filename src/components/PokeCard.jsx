@@ -95,9 +95,9 @@ if(loading || !data){
         {stats.map((statObj,statIndex)=>{
           const {stat,base_stat} = statObj
           return(
-            <div key={statIndex}>
-              <p>{stat}</p>
-              <p>{base_stat}</p>
+            <div key={statIndex} className="stat-item">
+              <p>{stat?.name?.replaceAll('-',' ')}</p>
+              <h4>{base_stat}</h4>
             </div>
           )
         })}
