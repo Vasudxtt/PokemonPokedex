@@ -32,7 +32,7 @@ export function PokeCard(props){
       } catch(err){
         console.log(err.message);
       }finally{
-
+        setLoading(false)
       }
       
     }
