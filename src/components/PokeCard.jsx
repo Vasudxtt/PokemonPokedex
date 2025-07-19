@@ -83,7 +83,11 @@ if(loading || !data){
       </div>
       <img className="default-img" src={'/pokemon/' + getFullPokedexNumber(selectedPokemon) + '.png'} alt={`${name}-large=img`}/>
       <div className="img-container">
-
+        {imgList.map((spriteUrl,spriteIndex)=>{
+          return(
+            <img key={spriteIndex} src={""} alt={`${name}-img-${spriteUrl}`} />
+          )
+        })}
       </div>
     </div>
   )
