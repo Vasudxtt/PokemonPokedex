@@ -21,6 +21,20 @@ export function PokeCard(props){
     if(selectedPokemon in cache){
       // read from cache
       setData(cache[selectedPokemon])
+      return
+    }
+
+    // we pass all the cache stuff to no avail and now need to fecth the data from api
+
+    async function fetchPokemonData() {
+      try{
+
+      } catch(err){
+        console.log(err.message);
+      }finally{
+
+      }
+      
     }
 
     // 3 if we fetch the api , make sure to save the information to the cache for next time
