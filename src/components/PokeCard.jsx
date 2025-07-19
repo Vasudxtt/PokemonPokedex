@@ -75,6 +75,7 @@ if(loading || !data){
           )
         })}
       </div>
+      <img className="default-img" src={'/pokemon/' + getFullPokedexNumber(selectedPokemon) + '.png'}/>
     </div>
   )
 }
