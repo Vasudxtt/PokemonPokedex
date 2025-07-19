@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import {getFullPokedexNumber, getPokedexNumber} from "../utils/index"
-import { TypeCard } from "./TypeCard"
+import  TypeCard  from "./TypeCard"
 
 export default function PokeCard(props){
   const {selectedPokemon} = props
