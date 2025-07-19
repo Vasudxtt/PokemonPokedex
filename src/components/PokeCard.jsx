@@ -27,8 +27,10 @@ export function PokeCard(props){
     // we pass all the cache stuff to no avail and now need to fecth the data from api
 
     async function fetchPokemonData() {
+      setLoading(true)
       try{
-
+        const baseUrl = 'https://pokeapi.co/api/v2/'
+        const suffix = 'pokemon/' + selectedPokemon
       } catch(err){
         console.log(err.message);
       }finally{
