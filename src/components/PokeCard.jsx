@@ -8,6 +8,8 @@ export function PokeCard(props){
   // loading state
   const[loading,setLoading] = useState(false)
 
+  const {name,height,abilities,stats,types,moves,sprites} = data || {}
+
   useEffect(()=>{
     // if loading,exit logic 
     if (loading || !localStorage){return}
@@ -50,10 +52,20 @@ export function PokeCard(props){
 
     // 3 if we fetch the api , make sure to save the information to the cache for next time
   },[selectedPokemon])
+
+if(loading){
+  return(
+    <div>
+      <h4>Loading...</h4>
+    </div>
+  )
+}
+
   return(
     <div className="poke-card">
       <div>
         <h4>#{getFullPokedexNumber(selectedPokemon)}</h4>
+        <h5>{name}</h5>
       </div>
     </div>
   )
