@@ -48,7 +48,7 @@ export function PokeCard(props){
     fetchPokemonData()
 
     // 3 if we fetch the api , make sure to save the information to the cache for next time
-  },[loading,selectedPokemon])
+  },[selectedPokemon])
   return(
     <div></div>
   )
