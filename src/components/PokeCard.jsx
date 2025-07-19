@@ -103,7 +103,16 @@ if(loading || !data){
         })}
       </div>
       <h3>Moves</h3>
-      <div className="pokemin-move-grid"></div>
+      <div className="pokemon-move-grid">
+        {moves.map((moveObj,moveIndex)=>{
+          // const {move} = moveObj
+          return(
+            <button className="button-card pokemon-move" key={moveIndex} onClick={()=>{}}><p>{moveObj?.move?.name.replaceAll('-',' ')}</p>
+            </button>
+          )
+        })}
+
+      </div>
     </div>
   )
 }
