@@ -1,7 +1,8 @@
 function App() {
-  
+
   return (
     <>
+    <h1>Pokemon Pokedex</h1>
     </>
   )
 }
