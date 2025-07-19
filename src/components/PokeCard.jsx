@@ -31,6 +31,9 @@ export function PokeCard(props){
       try{
         const baseUrl = 'https://pokeapi.co/api/v2/'
         const suffix = 'pokemon/' + selectedPokemon
+        const finalUrl = baseUrl + suffix
+        const res = await fetch(finalUrl)
+
       } catch(err){
         console.log(err.message);
       }finally{
