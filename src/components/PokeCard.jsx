@@ -71,7 +71,7 @@ if(loading || !data){
       <div className="type-container">
         {types.map((type,typeIndex)=>{
           return(
-            <TypeCard key={typeIndex}/>
+            <TypeCard key={typeIndex} type={type}/>
           )
         })}
       </div>
