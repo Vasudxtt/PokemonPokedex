@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import {getPokedexNumber} from "../utils/index"
+import {getFullPokedexNumber, getPokedexNumber} from "../utils/index"
 
 export function PokeCard(props){
   const {selectedPokemon} = props
@@ -51,6 +51,10 @@ export function PokeCard(props){
     // 3 if we fetch the api , make sure to save the information to the cache for next time
   },[selectedPokemon])
   return(
-    <div></div>
+    <div className="poke-card">
+      <div>
+        <h4>#{getFullPokedexNumber(selectedPokemon)}</h4>
+      </div>
+    </div>
   )
 }
