@@ -9,7 +9,7 @@ export function PokeCard(props){
 
   useEffect(()=>{
     // if loading,exit logic 
-
+    if (loading || !localStorage){return}
     //check if the selected pokemon information is available in the cache
 
     // 1.define the cache
