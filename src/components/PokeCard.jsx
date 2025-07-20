@@ -34,6 +34,13 @@ if(move in c){
   setSkill(c[move])
   return
 }
+try {
+  
+} catch (err) {
+  console.log(err);
+} finally{
+  setLoadingSkill(false)
+}
 
   }
 
