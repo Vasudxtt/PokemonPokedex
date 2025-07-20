@@ -125,7 +125,7 @@ if(loading || !data){
         </div>
         <div>
           <h6>Description</h6>
-          <p>{skill.description}</p>
+          <p>{skill.description.replaceAll('\\n',' ')}</p>
         </div>
       </Modal>)}
       <div>
