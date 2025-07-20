@@ -8,8 +8,8 @@ export default function SideNav(props){
 
   const[searchValue,setSearchValue]=useState('')
 
-  const filteredPokemon = first151Pokemon.filter(ele=>{
-    
+  const filteredPokemon = first151Pokemon.filter((ele,eleIndex)=>{
+
   })
 
   return(
