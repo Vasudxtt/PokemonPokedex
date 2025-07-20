@@ -166,7 +166,7 @@ if(loading || !data){
           // const {move} = moveObj
           return(
             <button className="button-card pokemon-move" key={moveIndex} onClick={()=>{
-              fetchMoveData(moveObj?.move?.name,moveObj?.move?)
+              fetchMoveData(moveObj?.move?.name,moveObj?.move?.url)
 
             }}><p>{moveObj?.move?.name.replaceAll('-',' ')}</p>
             </button>
