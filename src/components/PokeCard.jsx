@@ -23,7 +23,7 @@ export default function PokeCard(props){
   // this is a function for the skill api as we are not importing it like the one we did for the sele tpokemon through use effect we will be doing this by async fn
 
   async function fetchMoveData(move,moveUrl) {
-    
+    if(loadingSkill || !localStorage || !moveUrl) {return}
   }
 
   useEffect(()=>{
