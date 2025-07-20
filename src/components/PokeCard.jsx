@@ -125,7 +125,7 @@ if(loading || !data){
         </div>
         <div>
           <h6>Description</h6>
-          <p>asaacadass</p>
+          <p>{skill.description}</p>
         </div>
       </Modal>)}
       <div>
