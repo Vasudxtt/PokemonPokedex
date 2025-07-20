@@ -71,7 +71,9 @@ if(loading || !data){
 
   return(
     <div className="poke-card">
-      <Modal></Modal>
+      <Modal handleCloseModel={()=>{}}>
+        {/* whatever we write here becomes the children props */}
+      </Modal>
       <div>
         <h4>#{getFullPokedexNumber(selectedPokemon)}</h4>
         <h5>{name}</h5>
