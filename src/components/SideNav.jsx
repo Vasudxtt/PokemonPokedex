@@ -9,7 +9,6 @@ export default function SideNav(props){
   const[searchValue,setSearchValue]=useState('')
 
   const filteredPokemon = first151Pokemon.filter
-  })
 
   return(
     <nav>
