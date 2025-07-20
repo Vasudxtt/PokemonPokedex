@@ -12,7 +12,9 @@ export default function SideNav(props){
       <input />
       {first151Pokemon.map((pokemon,pokemonIndex)=>{
         return(
-          <button key={pokemonIndex} className={'nav-card ' +}>
+          <button key={pokemonIndex} className={'nav-card ' +{
+            pokemonIndex ===
+          }}>
             <p>{getFullPokedexNumber(pokemonIndex)}</p>
             <p>{pokemon}</p>
           </button>
