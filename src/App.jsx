@@ -13,7 +13,7 @@ function handleToogleMenu() {
   return (
     <>
     <Header handleToggleMenu={handleToogleMenu} />
-    <SideNav selectedPokemon={selectedPokemon} setSelectedPokemon={setSelectedPokemon}/>
+    <SideNav selectedPokemon={selectedPokemon} setSelectedPokemon={setSelectedPokemon} handleToggleMenu={handleToogleMenu}/>
     <PokeCard selectedPokemon={selectedPokemon}/>
     </>
   )
