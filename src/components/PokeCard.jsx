@@ -35,7 +35,9 @@ if(move in c){
   return
 }
 try {
-  
+  setLoadingSkill(true)
+  const res = await fetch(moveUrl)
+  const moveData = res.json
 } catch (err) {
   console.log(err);
 } finally{
