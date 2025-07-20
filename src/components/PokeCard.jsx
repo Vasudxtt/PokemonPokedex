@@ -38,7 +38,7 @@ try {
   setLoadingSkill(true)
   const res = await fetch(moveUrl)
   const moveData = await res.json()
-  const description = moveData?.flavour_text_entries.filter(
+  const description = moveData?.flavor_text_entries.filter(
     val =>{
       return val.version_group.name = 'firered-leafgreen'
     }
