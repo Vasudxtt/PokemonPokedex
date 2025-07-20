@@ -10,6 +10,7 @@ const[showSideMenu,setShowSideMenu] = useState(false)
 function handleToogleMenu() {
   setShowSideMenu(!showSideMenu)
 }
+function
   return (
     <>
     <Header handleToggleMenu={handleToogleMenu} />
