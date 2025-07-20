@@ -71,7 +71,7 @@ if(loading || !data){
 
   return(
     <div className="poke-card">
-      <Modal handleCloseModel={()=>{}}>
+      <Modal handleCloseModel={()=>{ }}>
         {/* whatever we write here becomes the children props */}
       </Modal>
       <div>
