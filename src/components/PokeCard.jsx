@@ -48,7 +48,7 @@ const skillData={
   name:move,
   description
 }
-setSkill()
+setSkill(skillData)
 } catch (err) {
   console.log(err);
 } finally{
