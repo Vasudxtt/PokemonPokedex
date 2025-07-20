@@ -10,6 +10,7 @@ export default function SideNav(props){
 
   const filteredPokemon = first151Pokemon.filter((ele,eleIndex)=>{
 // if the full pokedex number includes the current search value, return true and keep the value in the array
+// to string is from python we cxan delete it if we want
 if(toString(getFullPokedexNumber(eleIndex)).includes(searchValue)){return true}
 // if the pokemon name includes the current search value, return true and keep the value in the array
 if(ele.toLowerCase().includes(searchValue.toLowerCase())){return true}
