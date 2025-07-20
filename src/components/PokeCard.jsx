@@ -43,6 +43,12 @@ try {
       return val.version_group.name = 'firered-leafgreen'
     }
   )[0]?.flavour_text
+
+const skillData={
+  name:move,
+  description
+}
+
 } catch (err) {
   console.log(err);
 } finally{
