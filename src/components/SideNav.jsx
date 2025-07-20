@@ -31,7 +31,7 @@ return false
       {filteredPokemon.map((pokemon,pokemonIndex)=>{
         const truePokedexNumber = first151Pokemon.indexOf(pokemon)
         return(
-          <button onClick={()=>{setSelectedPokemon(truePokedexNumber) }} key={pokemonIndex} className={'nav-card ' + (pokemonIndex === selectedPokemon ? 'nav-card-selected' : ''
+          <button onClick={()=>{setSelectedPokemon(truePokedexNumber)handleCloseMenu() }} key={pokemonIndex} className={'nav-card ' + (pokemonIndex === selectedPokemon ? 'nav-card-selected' : ''
 
         )}>
             <p>{getFullPokedexNumber(truePokedexNumber)}</p>
