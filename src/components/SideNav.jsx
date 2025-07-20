@@ -4,6 +4,9 @@ import {first151Pokemon, getFullPokedexNumber} from"../utils/index"
 
 export default function SideNav(props){
   const {selectedPokemon,setSelectedPokemon} = props
+
+  const[saechValue,setSearchValue]=useState('')
+
   return(
     <nav>
       <div className={"header"}>
