@@ -23,7 +23,7 @@ return false
         <h1 className="text-gradient">Pokédex</h1>
       </div>
       <input value={searchValue} onChange={(e)=>{setSearchValue(e.target.value)}} />
-      {first151Pokemon.map((pokemon,pokemonIndex)=>{
+      {filteredPokemon.map((pokemon,pokemonIndex)=>{
         return(
           <button onClick={()=>{setSelectedPokemon(pokemonIndex) }} key={pokemonIndex} className={'nav-card ' + (pokemonIndex === selectedPokemon ? 'nav-card-selected' : ''
 
