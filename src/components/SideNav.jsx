@@ -13,7 +13,7 @@ export default function SideNav(props){
       <div className={"header"}>
         <h1 className="text-gradient">Pokédex</h1>
       </div>
-      <input />
+      <input value={searchValue} />
       {first151Pokemon.map((pokemon,pokemonIndex)=>{
         return(
           <button onClick={()=>{setSelectedPokemon(pokemonIndex) }} key={pokemonIndex} className={'nav-card ' + (pokemonIndex === selectedPokemon ? 'nav-card-selected' : ''
