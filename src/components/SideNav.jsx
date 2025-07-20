@@ -12,6 +12,9 @@ export default function SideNav(props){
 // if the full pokedex number includes the current search value, return true and keep the value in the array
 if(toString(getFullPokedexNumber(eleIndex)).includes(searchValue)){return true}
 // if the pokemon name includes the current search value, return true and keep the value in the array
+if(ele.name.includes(searchValue)){return true}
+
+
 // otherwise exclude value from the array
   })
 
