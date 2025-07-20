@@ -16,7 +16,9 @@ function handleCloseMenu() {
   return (
     <>
     <Header handleToggleMenu={handleToogleMenu} />
-    <SideNav selectedPokemon={selectedPokemon} setSelectedPokemon={setSelectedPokemon} handleToggleMenu={handleToogleMenu} showSideMenu={showSideMenu}/>
+    <SideNav selectedPokemon={selectedPokemon} setSelectedPokemon={setSelectedPokemon} 
+    handleCloseMenu={handleCloseMenu}
+    showSideMenu={showSideMenu}/>
     <PokeCard selectedPokemon={selectedPokemon}/>
     </>
   )
