@@ -3,7 +3,7 @@ import {first151Pokemon, getFullPokedexNumber} from"../utils/index"
 
 
 export default function SideNav(props){
-  const {setSelectedPokemon} = props
+  const {selectedPokemon,setSelectedPokemon} = props
   return(
     <nav>
       <div className={"header"}>
