@@ -9,6 +9,7 @@ export default function PokeCard(props){
   const[data,setData] = useState(null)
   // loading state
   const[loading,setLoading] = useState(false)
+  const [skill,setSkill] = useState(null)
 
   const {name,height,abilities,stats,types,moves,sprites} = data || {}
 
