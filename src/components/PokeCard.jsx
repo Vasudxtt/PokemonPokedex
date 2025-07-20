@@ -125,7 +125,8 @@ if(loading || !data){
         </div>
         <div>
           <h6>Description</h6>
-          <p>{skill.description.replaceAll('\\n',' ')}</p>
+          <p>{skill.description}</p>
+          {/* replaceAll('\\n',' ') thisbis used for making the site go blank on all even option */}
         </div>
       </Modal>)}
       <div>
