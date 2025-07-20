@@ -24,6 +24,13 @@ export default function PokeCard(props){
 
   async function fetchMoveData(move,moveUrl) {
     if(loadingSkill || !localStorage || !moveUrl) {return}
+
+    // check cache for move
+    let c = {}
+    if (localStorage.getItem('pokemon-moves')){
+      c = JSON.parse(localStorage.getItem('pokemon-moves'))
+
+    }
   }
 
   useEffect(()=>{
