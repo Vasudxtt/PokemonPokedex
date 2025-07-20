@@ -30,7 +30,7 @@ return false
           <button onClick={()=>{setSelectedPokemon(pokemonIndex) }} key={pokemonIndex} className={'nav-card ' + (pokemonIndex === selectedPokemon ? 'nav-card-selected' : ''
 
         )}>
-            <p>{getFullPokedexNumber()}</p>
+            <p>{getFullPokedexNumber(truePokedexNumber)}</p>
             <p>{pokemon}</p>
           </button>
         )
