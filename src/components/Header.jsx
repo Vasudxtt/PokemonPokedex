@@ -8,7 +8,9 @@ export default function Header(props) {
         //     <h1 className="text-gradient">Pokedéx</h1>
         // </header>
         <header>
-           <button onClick={handleToggleMenu} className="open-nav-button"></button>
+           <button onClick={handleToggleMenu} className="open-nav-button">
+            <i className="fa-solid fa-bars"></i>
+           </button>
         </header>
     )
   }
