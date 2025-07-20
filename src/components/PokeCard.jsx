@@ -37,7 +37,7 @@ if(move in c){
 try {
   setLoadingSkill(true)
   const res = await fetch(moveUrl)
-  const moveData = res.json
+  const moveData = await res.json()
   const description = moveData?.flavour_text_entries.filter(
     val =>{
       return val.version_group.name = 'firered-leafgreen'
