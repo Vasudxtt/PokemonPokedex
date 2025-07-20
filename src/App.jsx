@@ -11,7 +11,7 @@ function handleToogleMenu() {
   setShowSideMenu(!showSideMenu)
 }
 function handleCloseMenu() {
-  setShowSideMenu()
+  setShowSideMenu(false)
 }
   return (
     <>
