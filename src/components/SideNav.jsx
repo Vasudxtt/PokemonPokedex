@@ -8,6 +8,8 @@ export default function SideNav(props){
 
   const[searchValue,setSearchValue]=useState('')
 
+  const filteredPokemon = 
+
   return(
     <nav>
       <div className={"header"}>
