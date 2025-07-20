@@ -72,6 +72,7 @@ if(loading || !data){
 
   return(
     <div className="poke-card">
+      {/* is skill is true render it out and if it is not true then dont render it out */}
       {skill && (<Modal handleCloseModel={()=>{ }}>
 
         {/* whatever we write here becomes the children props */}
