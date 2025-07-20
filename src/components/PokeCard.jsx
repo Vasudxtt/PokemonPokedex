@@ -30,6 +30,11 @@ export default function PokeCard(props){
     if (localStorage.getItem('pokemon-moves')){
       c = JSON.parse(localStorage.getItem('pokemon-moves'))
     }
+if(move in c){
+  setSkill(c[move])
+  return
+}
+
   }
 
   useEffect(()=>{
