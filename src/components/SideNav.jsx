@@ -21,7 +21,9 @@ return false
   return(
     <nav>
       <div className={"header"}>
-        <button className="open-nav-button"></button>
+        <button className="open-nav-button">
+           <i className="fa-solid fa-arrow-left-long"></i>
+        </button>
         <h1 className="text-gradient">Pokédex</h1>
       </div>
       <input placeholder="Search for Pokémon 0r 001...." value={searchValue} onChange={(e)=>{setSearchValue(e.target.value)}} />
