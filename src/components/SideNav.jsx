@@ -2,9 +2,8 @@ import { useState } from "react"
 import {first151Pokemon, getFullPokedexNumber} from"../utils/index"
 
 
-
 export default function SideNav(props){
-  const {selectedPokemon,setSelectedPokemon} = props
+  const {selectedPokemon,setSelectedPokemon,handleToggleMenu} = props
 
   const[searchValue,setSearchValue]=useState('')
 
