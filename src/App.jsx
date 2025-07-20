@@ -5,6 +5,7 @@ import  SideNav  from "./components/SideNav"
 
 function App() {
 const [selectedPokemon, setSelectedPokemon] = useState(0)
+const[showSideMenu,setShowSideMenu] = useState(false)
   return (
     <>
     <Header/>
