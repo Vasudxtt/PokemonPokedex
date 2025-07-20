@@ -38,7 +38,7 @@ try {
   setLoadingSkill(true)
   const res = await fetch(moveUrl)
   const moveData = res.json
-  const description = moveData?.flavour_text
+  const description = moveData?.flavour_text_entries
 } catch (err) {
   console.log(err);
 } finally{
