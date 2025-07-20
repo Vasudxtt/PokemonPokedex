@@ -72,7 +72,7 @@ if(loading || !data){
 
   return(
     <div className="poke-card">
-      <Modal handleCloseModel={()=>{ }}>
+      {(<Modal handleCloseModel={()=>{ }}>
         {/* whatever we write here becomes the children props */}
         <div>
           <h6>Name</h6>
@@ -82,7 +82,7 @@ if(loading || !data){
           <h6>Description</h6>
           <p>asaacadass</p>
         </div>
-      </Modal>
+      </Modal>)}
       <div>
         <h4>#{getFullPokedexNumber(selectedPokemon)}</h4>
         <h5>{name}</h5>
