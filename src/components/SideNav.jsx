@@ -3,7 +3,7 @@ import {first151Pokemon, getFullPokedexNumber} from"../utils/index"
 
 
 export default function SideNav(props){
-  const {selectedPokemon,setSelectedPokemon,handleToggleMenu,showSideMenu} = props
+  const {selectedPokemon,setSelectedPokemon,handleCloseMenu,showSideMenu} = props
 
 
   const[searchValue,setSearchValue]=useState('')
