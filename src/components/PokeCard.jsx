@@ -50,6 +50,7 @@ const skillData={
 }
 setSkill(skillData)
 c[move]=skillData
+localStorage.setItem('pokemon-moves',JSON.stringify(c))
 
 } catch (err) {
   console.log(err);
