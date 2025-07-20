@@ -1,7 +1,7 @@
 import { Children } from 'react'
 import ReactDom from 'react-dom'
 
-export default function Modals(props){
+export default function Modal(props){
   const {children,handleCloseModel} = props
   return ReactDom.createPortal(
     <div className='modal-container'>
