@@ -25,11 +25,12 @@ return false
       </div>
       <input value={searchValue} onChange={(e)=>{setSearchValue(e.target.value)}} />
       {filteredPokemon.map((pokemon,pokemonIndex)=>{
+        const truePokedexNumber = first151Pokemon.indexOf(pokemon)
         return(
           <button onClick={()=>{setSelectedPokemon(pokemonIndex) }} key={pokemonIndex} className={'nav-card ' + (pokemonIndex === selectedPokemon ? 'nav-card-selected' : ''
 
         )}>
-            <p>{getFullPokedexNumber(filteredPokemon.indexOf(pokemon))}</p>
+            <p>{getFullPokedexNumber()}</p>
             <p>{pokemon}</p>
           </button>
         )
