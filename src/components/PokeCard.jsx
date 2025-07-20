@@ -72,7 +72,8 @@ if(loading || !data){
 
   return(
     <div className="poke-card">
-      {(<Modal handleCloseModel={()=>{ }}>
+      {skill && (<Modal handleCloseModel={()=>{ }}>
+
         {/* whatever we write here becomes the children props */}
         <div>
           <h6>Name</h6>
