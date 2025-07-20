@@ -38,7 +38,11 @@ try {
   setLoadingSkill(true)
   const res = fetch(moveUrl)
   const moveData = res.json
-  const description = moveData?.flavour_text_entries.filter()
+  const description = moveData?.flavour_text_entries.filter(
+    val =>{
+      return val.version
+    }
+  )
 } catch (err) {
   console.log(err);
 } finally{
