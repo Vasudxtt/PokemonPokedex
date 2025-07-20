@@ -23,7 +23,8 @@ return false
       <div className={"header"}>
         <h1 className="text-gradient">Pokédex</h1>
       </div>
-      <input value={searchValue} onChange={(e)=>{setSearchValue(e.target.value)}} />
+      <input placeholder="Search for Pokémon" value={searchValue} onChange={(e)=>{setSearchValue(e.target.value)}} />
+
       {filteredPokemon.map((pokemon,pokemonIndex)=>{
         const truePokedexNumber = first151Pokemon.indexOf(pokemon)
         return(
