@@ -29,7 +29,6 @@ export default function PokeCard(props){
     let c = {}
     if (localStorage.getItem('pokemon-moves')){
       c = JSON.parse(localStorage.getItem('pokemon-moves'))
-
     }
   }
 
