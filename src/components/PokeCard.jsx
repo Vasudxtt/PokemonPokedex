@@ -40,7 +40,7 @@ try {
   const moveData = res.json
   const description = moveData?.flavour_text_entries.filter(
     val =>{
-      return val.version
+      return val.version_group.name
     }
   )
 } catch (err) {
