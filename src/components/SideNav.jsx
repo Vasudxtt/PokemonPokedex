@@ -20,7 +20,7 @@ return false
 
   return(
     <nav className={'' + (showSideMenu ? 'open' : '' )}>
-      <div className={"header"}>
+      <div className={"header "  + (showSideMenu ? 'open' : '' )}>
         <button className="open-nav-button">
            <i className="fa-solid fa-arrow-left-long"></i>
         </button>
