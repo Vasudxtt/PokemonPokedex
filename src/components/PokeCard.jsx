@@ -10,6 +10,7 @@ export default function PokeCard(props){
   // loading state
   const[loading,setLoading] = useState(false)
   const [skill,setSkill] = useState(null)
+  const [loadingSkill,setLoadingSkill] = useState(false)
 
   const {name,height,abilities,stats,types,moves,sprites} = data || {}
 
@@ -18,6 +19,12 @@ export default function PokeCard(props){
     if(['versions','other'].includes(val)){return false}
     return true
   })
+
+  // this is a function for the skill api as we are not importing it like the one we did for the sele tpokemon through use effect we will be doing this by async fn
+
+  async function fetchMoveData(move,moveUrl) {
+    
+  }
 
   useEffect(()=>{
     // if loading,exit logic 
