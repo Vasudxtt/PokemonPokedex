@@ -36,7 +36,7 @@ if(move in c){
 }
 try {
   setLoadingSkill(true)
-  const res = await fetch(moveUrl)
+  const res = fetch(moveUrl)
   const moveData = res.json
   const description = moveData?.flavour_text_entries.filter()
 } catch (err) {
