@@ -121,7 +121,7 @@ if(loading || !data){
         {/* whatever we write here becomes the children props */}
         <div>
           <h6>Name</h6>
-          <h2></h2>
+          <h2>{skill.name}</h2>
         </div>
         <div>
           <h6>Description</h6>
