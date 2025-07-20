@@ -42,7 +42,7 @@ try {
     val =>{
       return val.version_group.name = 'firered-leafgreen'
     }
-  )[0].flavour_text
+  )[0]?.flavour_text
 } catch (err) {
   console.log(err);
 } finally{
