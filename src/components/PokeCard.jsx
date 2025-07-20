@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import {getFullPokedexNumber, getPokedexNumber} from "../utils/index"
 import  TypeCard  from "./TypeCard"
+import Modal from "./MOdal"
 
 export default function PokeCard(props){
   const {selectedPokemon} = props
@@ -70,6 +71,7 @@ if(loading || !data){
 
   return(
     <div className="poke-card">
+      <Modal></Modal>
       <div>
         <h4>#{getFullPokedexNumber(selectedPokemon)}</h4>
         <h5>{name}</h5>
