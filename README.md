@@ -1,4 +1,3 @@
-# Pokedex
+<h1>You can check this out on this </h1>
 
-Just for Fun And practice
-
+<h2>Link : https://pokemonpokedex10.netlify.app/</h2> 
